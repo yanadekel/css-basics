@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\ex 12.3"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "section-7-EdgeLedger Website"
+	}
+}

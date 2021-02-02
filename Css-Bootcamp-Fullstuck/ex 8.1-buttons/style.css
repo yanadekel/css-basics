@@ -1,0 +1,182 @@
+body {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  line-height: 1.4em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width:fit-content;
+  margin:  auto;
+  background-color: lightblue;
+  border: 1px solid lightblue;
+  border-radius: 5px;
+ 
+}
+
+.btn {
+
+  background-color: teal;
+  color-adjust: #fff;
+  border: none;
+  font-size:16px;
+  cursor: pointer;
+}
+
+
+#flat .btn {
+  margin:0 10px;
+  border: 0;
+  font-size: 16px;
+ 
+  
+}
+
+#flat   h1{
+  text-align: center;
+}
+
+
+
+#flat .green{
+  background-color: green;
+  padding: 30px 40px;
+  
+}
+
+#flat .red{
+  background-color:red;
+  padding: 20px 30px;
+  
+}
+
+#flat .blue{
+  background-color: blue;
+  padding: 10px 20px;
+
+}
+
+
+#Round .btn {
+  margin:0 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border:none;
+  
+}
+#Round .btn:hover {
+  color:tomato;
+  background: transparent;
+}
+
+#Round   h1{
+  text-align: center;
+}
+
+
+
+#Round .green{
+  background-color: orange;
+  padding: 30px 40px;
+  border-radius: 20px;
+  
+}
+
+#Round .red{
+  background-color: yellow;
+  padding: 20px 30px;
+  border-radius: 20px;
+  
+}
+
+#Round .blue{
+  background-color:grey;
+  padding: 10px 20px;
+  border-radius: 20px;
+  
+}
+
+
+#flatghost .btn {
+  margin:0 10px;
+  font-size: 16px;
+  border: 0;
+  background-color:transparent;
+ 
+  
+}
+
+#flatghost   h1{
+  text-align: center;
+}
+
+
+
+#flatghost .green{
+  border:5px solid green;
+  padding: 30px 40px;
+  
+}
+
+#flatghost .red{
+  border:3px solid red;
+  padding: 20px 30px;
+  
+}
+
+#flatghost .blue{
+  border:3px solid blue;
+  padding: 10px 20px;
+
+}
+
+#Roundghost .btn {
+  margin:0 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border:none;
+  background-color:transparent;
+  
+}
+
+#Roundghost  h1{
+  text-align: center;
+}
+
+#Roundghost .btn:hover {
+  color:tomato;
+  background: transparent;
+}
+
+
+
+#Roundghost .green{
+  border:5px solid orange;
+  padding: 30px 40px;
+  border-radius: 20px;
+  
+}
+
+#Roundghost .red{
+  border:5px solid yellow;
+  padding: 20px 30px;
+  border-radius: 20px;
+  
+}
+
+#Roundghost .blue{
+  border:5px solid grey;
+  padding: 10px 20px;
+  border-radius: 20px;
+  
+}
+
+
+
+
+
+

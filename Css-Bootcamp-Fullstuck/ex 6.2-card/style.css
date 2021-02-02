@@ -1,0 +1,42 @@
+.card {
+  margin: 50% auto;
+  width: max-content;
+}
+
+
+img {
+  width: 100%;
+  margin-bottom: -7px;
+}
+
+.container{
+  margin: -2px auto;
+  padding: 2px 30px;
+  background-color: antiquewhite;
+
+}
+
+h4 {
+  padding:2px 2px;
+  margin: 0 auto;
+}
+
+p{
+  margin:5px auto;
+  padding: 2px;
+}
+
+ul{
+  padding-inline-start: 0px;
+  margin: 30px auto 80px auto
+}
+
+li {
+  display: inline;
+
+}
+
+a{
+  color: orange;
+}
+

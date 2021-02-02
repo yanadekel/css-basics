@@ -1,0 +1,161 @@
+:root {
+  --max-width:1100px;
+  --primery-color:#decad3;
+  --secondary-color:#ac9da4;
+  --light-color:#f7e1eb;
+  --dark-color: #7b7075;
+  
+}
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4em;
+  background: var(--light-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.navbar {
+  list-style: none;
+  background: var(--dark-color);
+  border-radius: 5px;
+  overflow: auto;
+  position: sticky;
+  top: 0; 
+  opacity: 0.7;
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.navbar .phrais {
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+.navbar .phrais h3{
+  padding:25px;
+  color: var(--secondary-color);
+  
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  width: 200px;
+  padding:10px;
+  
+}
+
+.main-nav li a {
+  display: block;
+  color:var(--primery-color);
+  text-decoration: none;
+ 
+}
+
+.navbar li a:hover {
+  background-color:var(--primery-color);
+  color:var(--dark-color);
+}
+
+.container {
+  max-width: 50%;
+  margin: 30px auto;
+  background-color: var(--primery-color);
+  box-sizing: border-box;
+  height: 800px;
+}
+
+#welcome {
+  padding: 40px;
+  margin: 5px auto;
+  height: 20%;
+}
+
+#welcome h1 {
+  text-align: center;
+  padding: 20px;
+ 
+}
+
+#card {
+  padding: 10px;
+  height: 40%;
+  margin: 30px auto;
+}
+
+#card .about {
+  width: 48%;
+  float: right;
+  padding: 20px;
+}
+
+#card .about p {
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#card .imeg {
+  width: 48%;
+  float: left;
+}
+
+#card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 70px;
+  padding-left: 5px;
+}
+
+.clr {
+  clear: both;
+}
+
+#btn {
+  width: 100%;
+  height: 10vh;
+  margin: 20px auto;
+  border: none;
+  border-radius: 5px;
+  background:var(--dark-color);
+  outline: none;
+}
+
+#btn:hover {
+  color: var(--dark-color);
+}
+
+#btn h4 {
+  text-align: center;
+  font-style: italic;
+  color: var(--primery-color);
+  margin: 2px;
+}
+
+#btn .social li {
+  display: inline;
+  margin: 0 20px;
+}
+
+#btn .social a {
+  color:var( #4a4346);
+  padding: 1px;
+  text-decoration: none;
+}
+
+#btn .social a:hover {
+  color: 	var(--primery-color);
+  text-decoration:none;
+}

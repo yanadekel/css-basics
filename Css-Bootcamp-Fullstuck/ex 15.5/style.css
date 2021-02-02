@@ -1,0 +1,157 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width:750px) {
+  .phrais {
+    display: flex;
+    flex-direction:column;
+    align-items: center;  
+  }
+
+.main-nav {
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  justify-content: center;
+}
+
+.navbar {
+  flex-direction: column;
+  align-items: center;
+}
+}
+
+.navbar {
+  background: antiquewhite;
+  border-radius: 5px;
+  overflow: auto;
+  position: sticky;
+  top: 0; 
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.phrais {
+  font-style: italic;
+}
+
+.main-nav {
+  display: flex;
+  list-style: none;
+  justify-content:space-between;
+  width:200px;
+
+}
+
+
+.main-nav li a {
+  display: block;
+  color: blueviolet;
+  text-decoration: none;
+  
+}
+
+.navbar li a:hover {
+  background-color: coral;
+  color: black;
+}
+
+.container {
+  max-width: 50%;
+  margin: 30px auto;
+  background-color: antiquewhite;
+  box-sizing: border-box;
+  height: 800px;
+}
+
+#welcome {
+  padding: 40px;
+  margin: 5px auto;
+  height: 20%;
+}
+
+#welcome h1 {
+  text-align: center;
+  padding: 20px;
+ 
+}
+
+#card {
+  padding: 10px;
+  height: 40%;
+  margin: 30px auto;
+}
+
+#card .about {
+  width: 48%;
+  float: right;
+  padding: 20px;
+}
+
+#card .about p {
+  font-weight: 600;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+#card .imeg {
+  width: 48%;
+  float: left;
+}
+
+#card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 70px;
+  padding-left: 5px;
+}
+
+.clr {
+  clear: both;
+}
+
+#btn {
+  width: 100%;
+  height: 10vh;
+  margin: 20px auto;
+  border: none;
+  border-radius: 5px;
+  background: antiquewhite;
+  outline: none;
+}
+
+#btn:hover {
+  color: blueviolet;
+}
+
+#btn h4 {
+  text-align: center;
+  font-style: italic;
+  color: blueviolet;
+  margin: 2px;
+}
+
+#btn .social li {
+  display: inline;
+  margin: 0 20px;
+}
+
+#btn .social a {
+  color: purple;
+  padding: 1px;
+  text-decoration: none;
+}
+
+#btn .social a:hover {
+  color: coral;
+  text-decoration: underline;
+}

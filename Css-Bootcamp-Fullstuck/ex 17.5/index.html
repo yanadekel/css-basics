@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>17.5</title>
+</head>
+<style>
+  .text-container {
+    background: rosybrown;
+    border: 1px solis palevioletred;
+    width: 800px;
+    height: 50vh;
+    padding: 20px;
+    border-radius: 25px;
+  }
+
+  .tool-tip {
+    position: relative;
+    font-style: oblique;
+    font-size: 16px;
+    display: inline-block;
+  }
+
+  .tool-tip::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+    visibility: hidden;
+
+  }
+
+  .tool-tip::after {
+    content: attr(data-helper);
+    position: absolute;
+    background: red;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 25px;
+    top: -100px;
+    right:-20px ;
+    visibility: hidden;
+    padding: 10px;
+  }
+
+  .tool-tip:hover::before,
+  .tool-tip:hover::after {
+    visibility: visible;
+
+  }
+</style>
+
+<body>
+  <div class="text-container">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem architecto eligendi id natus nihil ad,
+      ducimus cupiditate vitae itaque voluptatem autem repellat quisquam in, facere voluptates quia deleniti sed aliquam
+      illum? Aliquid praesentium quae quisquam ex sint dolore dolor, impedit recusandae, esse doloremque porro dolorum
+      libero natus laborum velit quia nobis molestias. Reiciendis laborum nemo ea doloremque! Illum, reprehenderit!
+      Dolorem laboriosam laborum laudantium ipsa deleniti.<span class="tool-tip" data-helper="Animi is a rendom word">
+        Animi</span> perferendis minima repudiandae?</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, dolorem. Asperiores, harum quae? Autem at
+      distinctio repudiandae, voluptatum veniam repellat quod possimus modi laborum esse. Mollitia, quasi!
+      Necessitatibus quas expedita nisi quam libero nesciunt quaerat dolorem repellendus eaque ipsum cupiditate in,
+      quidem recusandae, exercitationem nihil, quod a maiores incidunt ratione. Labore explicabo inventore rerum
+      reiciendis! Doloribus, quaerat! Suscipit ea labore ipsa repellendus ratione voluptatibus autem aliquam, laboriosam
+      eius<span class="tool-tip" data-helper="error is not good">error</span> , deleniti voluptatem sequi neque quasi
+      impedit! Eligendi voluptatum soluta, nisi repellendus accusamus
+      molestiae dolores doloribus officiis iure distinctio velit eum magnam eveniet excepturi perspiciatis ipsa eos nemo
+      qui consequuntur similique totam.</p>
+  </div>
+</body>
+
+</html>

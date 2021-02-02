@@ -1,0 +1,17 @@
+#outer {
+    width: 100px;
+    height: 100px;
+    background: darkcyan;
+    margin: 50px;
+    position: relative;
+    /* i chenged the font size and it steel the same 10px */
+    font-size: 30px;
+}
+
+#inner {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    background: lightgreen;
+    position: absolute;
+}

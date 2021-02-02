@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>17.4</title>
+</head>
+<style>
+  body {
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 100 vh;
+    width: 100vw;
+
+  }
+
+  .outer-box {
+    width: 600px;
+    height: 400px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+  }
+
+  .inner-box {
+    width: 60%;
+    height: 40%;
+    border: blueviolet 2px solid;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .outer-box::after{
+    content: '';
+    width:40%;
+    height:140%;
+    background: black;
+    position: absolute;
+ 
+  
+  }
+
+
+
+
+  .inner-box::after{
+    content: 'MY cool box!';
+    width: 140%;
+    height: 30%;
+    background:black;
+    position: absolute;
+    color:white;
+  
+
+   
+
+  }
+
+
+ 
+   
+</style>
+
+<body>
+  <div class="outer-box">
+    <div class="inner-box"></div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 50%;
+    margin: 30px auto;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    height: 800px;
+}
+
+/* #welcome,
+#card,
+#visitme {
+    background-color: burlywood;
+    border: 3px solid red;
+} */
+
+#welcome {
+    padding: 40px;
+    margin: 5px auto;
+    height: 20%;
+}
+
+#welcome h1 {
+    text-align: center;
+}
+
+#card {
+    /* max-width: 90%; */
+    padding: 20px;
+    height: 40%;
+    margin 30px auto;
+}
+
+#card .about {
+    width: 48%;
+    float: right;
+    margin: 2opx;
+    padding: 80px;
+}
+
+
+
+#card .imeg {
+    width: 48%;
+    float: left;
+    margin: 2px;
+}
+
+#card img {
+    width: 100%;
+    height: 100%;
+}
+
+.cir {
+    clear: both;
+}
+
+#visitme {
+    width: 100%;
+    height: 10%;
+    margin: 20px auto;
+}
+
+#visitme h4 {
+    text-align: center;
+    font-style: italic;
+    color: blueviolet;
+}
+
+#visitme .social li {
+    display: inline;
+    margin: 0 20px;
+}
+
+#visitme .social a{
+    color:purple;
+    padding: 1px;
+  
+  }

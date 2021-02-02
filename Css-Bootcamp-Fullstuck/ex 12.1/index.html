@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex 12.1</title>
+</head>
+
+<body>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    header {
+      background: burlywood;
+      color: black;
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      padding-top: 10rem;
+    }
+
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      margin: 1rem 0;
+    }
+
+
+    .btn {
+      display: inlin-block;
+      text-decoration: none;
+      background: oldlace;
+      color: #333;
+      padding: 0.75rem 2rem;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 1rem;
+
+      }
+
+      header p {
+        font-size:10px;
+      }
+    }
+
+    @media( min-width:500px) and (max-width:765px) {
+      header h1 {
+        font-size: 2rem;
+
+      }
+
+      header p {
+        font-size:20px;
+      }
+
+    }
+
+    @media (min-width: 765px) {
+      header h1 {
+        font-size: 4rem;
+
+      }
+
+      header p {
+        font-size:50px;
+      }
+
+    }
+  </style>
+  <header>
+    <h1>wellcome To Our Web Site</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptas esse recusandae dolor amet! Enim
+      similique
+      eius exercitationem! Quam, porro! Odit quo ab nisi aperiam ipsam illum dolor aspernatur eveniet doloribus unde
+      maiores explicabo mollitia natus, labore ad magnam placeat saepe beatae nam libero distinctio earum, illo alias
+      facilis! Dolor optio at, porro sapiente praesentium temporibus quidem omnis fuga perferendis.</p>
+
+
+
+
+    <a href="#" class=btn>Find out more</a>
+  </header>
+</body>
+
+</html>
