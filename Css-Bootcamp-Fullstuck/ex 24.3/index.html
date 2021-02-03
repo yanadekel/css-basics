@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>24.3 grid</title>
+</head>
+<style>
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-areas:
+      'header header header header'
+      'sidebar content content sidebar-2'
+      'footer footer footer footer';
+    width: 100vw;
+    height:100vh;
+  }
+
+
+  .header {
+    grid-area: header;
+    background: blueviolet;
+    border-radius: 10px;
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    background: cornflowerblue;
+    border-radius: 10px;
+  }
+
+  .content {
+    grid-area: content;
+    background: darkcyan;
+    border-radius: 10px;
+  }
+
+  .sidebar-2 {
+    grid-area: sidebar-2;
+    background: violet;
+    border-radius: 10px;
+  }
+
+  .footer {
+    grid-area: footer;
+    background: burlywood;
+    border-radius: 10px;
+  }
+
+@media(max-width: 768px){
+  .grid{
+    grid-template-areas:
+      'header header header header'
+      'sidebar content content content'
+      ' sidebar-2 sidebar-2 sidebar-2 sidebar-2'
+      'footer footer footer footer';
+  }
+ 
+}
+@media(max-width: 500px) {
+  .grid{
+    grid-template-areas:
+      'header header header header'
+      'sidebar sidebar sidebar sidebar'
+      'content content content content'
+      ' sidebar-2 sidebar-2 sidebar-2 sidebar-2'
+      'footer footer footer footer';
+  }
+  
+}
+</style>
+
+<body>
+  <div class="grid">
+    <header class="header">Header</header>
+    <aside class="sidebar">sidebar</aside>
+    <section class="content">content</section>
+    <aside class="sidebar-2">sidebar 2</aside>
+    <footer class="footer">footer</footer>
+  </div>
+</body>
+
+</html>
