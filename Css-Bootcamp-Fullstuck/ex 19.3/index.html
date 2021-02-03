@@ -1,15 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>19.3</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .box {
+      border: 2px black solid;
+      width: 200px;
+      height: 100px;
+      margin: 10px;
+      position: relative;
+      transition: all 2s ease-in-out;
+      overflow: hidden;
+    }
+
+
+    .TranslateY::before {
+      content: 'YEAH';
+      position: absolute;
+      width:100%;
+      height: 100%;
+      background: red;
+      top:-110px;
+      transition: all 2s ease-in-out;
+    }
+    .TranslateY:hover::before {
+      top:0;
+      left:0;
+    }
+
+    #Rotate:hover::before {
+     
+      top: -200px;
+      left: -100px;
+      transform: rotate(25deg);
+      background: yellow;
+      width: 200px;
+      height: 200px;
+    }
+
+    #Translate:hover::after {
+      position: absolute;
+      right: 200px;
+      transform: translateX(100px);
+      background-color: red;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
+
 <body>
-<div class="box1"></div>
-<div class="box2"></div>
-<div class="box3"></div>
-<div class="box4"></div>
+  <div class="box" id="Rotate">Rotate</div>
+  <div class="box" id="Translate">Translate</div>
+  <div class="box Scale&Opacity">Scale&Opacity</div>
+  <div class="box TranslateY">TranslateY</div>
 </body>
 
 </html>
