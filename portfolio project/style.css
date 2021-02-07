@@ -203,6 +203,7 @@ h1:after {
   border-radius: 50%;
   position: absolute;
   left: 700px;
+  bottom: -100px;
 }
 
 .large-2 {
@@ -223,17 +224,17 @@ h1:after {
 
 .few-projects>li:hover .large-1 {
   left: 700px;
-  top: 40px;
+ 
 }
 
 .few-projects>li:hover .large-2 {
   left: 700px;
-  top: -82px;
+  top: -300px;
 }
 
 .few-projects>li:hover .large-3 {
   left: 700px;
-  top: -193px;
+  top: -410px;
 }
 
 .contact-me> {
@@ -345,6 +346,8 @@ img.page-2__about-me {
   outline: none;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
+  text-align: center;
 }
 
 
