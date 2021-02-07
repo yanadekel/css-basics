@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>layot</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(41, 1fr);
+    }
+
+
+
+    header,
+    main,
+    aside,
+    footer {
+      border: 2px red solid;
+      padding: 3rem;
+      margin: 5px;
+    }
+
+    .topnav1 {
+      grid-column: 1 / span 7;
+      grid-row: 1 / span 2;
+    }
+
+    .projects {
+      grid-column: 1 /span 6;
+      grid-row: 3/ span 10;
+    }
+
+    .contact-me {
+      grid-column: 7 /span 1;
+      grid-row: 4 / span 10;
+    }
+
+    .topnav-2 {
+      grid-column: 1 / span 7;
+      grid-row: 15 / span 2;
+    }
+
+    .about-container {
+      grid-column: 1 / span 6;
+      grid-row: 17 / span 6;
+    }
+
+    .fullstack-container {
+      grid-column:1/ span 6 ;
+      grid-row: 23 / span 12;
+    }
+
+    .curriculum-container {
+      grid-column: 2 / span 4;
+      grid-row: 35/ span 6;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid">
+    <header class="topnav1">topnav</header>
+    <main class="projects">projects</main>
+    <aside class="contact-me">contact-me</aside>
+    <header class="topnav-2">topnav-2</header>
+    <main class="about-container">aboutme</main>
+    <main class="fullstack-container">fullstack-container</main>
+    <footer class="curriculum-container">curriculum-container</footer>
+  </div>
+</body>
+
+</html>
