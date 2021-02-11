@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Css-Bootcamp-Fullstuck\\ex 18.2"
+		},
+		{
+			"path": "..\\Css-Bootcamp-Fullstuck\\ex 19.3"
+		},
+		{
+			"path": "..\\Css-Bootcamp-Fullstuck\\ex 19.4"
+		},
+		{
+			"path": "..\\Css-Bootcamp-Fullstuck\\ex 15.5"
+		},
+		{
+			"path": "..\\Css-Bootcamp-Fullstuck\\ex 24.4"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "portfolio project"
+	}
+}
